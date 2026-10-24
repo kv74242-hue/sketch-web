@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sketchBoard{
+    display:grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    margin: 15px;
+  
+}
+
+.inpContainer{
+  display: flex;
+  align-items:center;
+
+
+}
+input{
+    height:17px;
+    margin-left:10px;
+    margin-right: 6px;
+
+}
+p{
+   font-size:17px; 
+}
+
+.btnContainer{
+ display: flex;
+ flex-direction: row;  
+  gap: 8px;
+  transition:background-color color 0.3s ease;
+}
+
+.BlackBtn{
+    background-color: black;
+}
+
+.GreyBtn{
+    background-color: grey;
+}
+.RandomBtn{
+    background-color:lightgreen;
+}
+.ResetBtn{
+  background-color:peru;
+} 
+.BlackBtn, .GreyBtn, .RandomBtn, .ResetBtn{
+ border:none;
+ color:white;
+ height: 25px;
+ width: 70px;
+ transition:background-color color 0.5s ease;
+}
+
+.BlackBtn:hover{
+ background-color: white;
+ color:black;
+}
+.GreyBtn:hover{
+     background-color: rgb(176, 175, 175);
+     color:black;
+}
+.RandomBtn:hover{
+     background-color: greenyellow;
+     color:black;
+}
+.ResetBtn:hover{
+     background-color: rgb(255, 128, 0);
+     color:black;
+}
+
+.grid-cell{
+    border: 1px solid rgb(222, 213, 213);
+    box-sizing: border-box;
+  
+}
